@@ -1,16 +1,13 @@
-import Link from "next/link";
+import Image from 'next/image';
 
 
- function Pages() {
+ function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
+    <div className="flex flex-col flex-2 justify-center items-center">
       <h1>Hello world! Welcome back</h1>
+      <Image src="/nft.png" alt="nft" width={400} height={400} />
       
-      <ul className="flex flex-row gap-5 ">
-        <li><Link href="/dashboard" className="py-2 px-4 bg-green-500 rounded-xl hover:bg-green-700">dashboard</Link></li>
-        <li><Link href="/" className="bg-red-500 border py-2 px-5 rounded-xl hover:bg-green-500">home</Link></li>
-      </ul>
     </div>
   );
 }
-export default Pages;
+export default Home;

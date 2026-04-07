@@ -1,13 +1,12 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const Dashboard = () => {
     return (
-        <div className="">
+        <div className="flex flex-col gap-6 ">
             <h1>Hello world from the dashboard</h1>
-            <ul className="flex flex-row gap-5 ">
-                <li><Link href="/dashboard" className="py-2 px-4 bg-green-500 rounded-xl hover:bg-green-700">dashboard</Link></li>
-                <li><Link href="/" className="bg-red-500 border py-2 px-5 rounded-xl hover:bg-green-500">home</Link></li>
-            </ul>
+            
+            <Image src="/nft.png" alt="nft" width={350} height={350} />
         </div>
     )
 }

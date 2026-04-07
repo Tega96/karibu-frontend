@@ -7,6 +7,7 @@ const DashboardLayout = ({
 }) => {
     return (
         <div className="min-h-full">
+            
             {children}
         </div>
     )
